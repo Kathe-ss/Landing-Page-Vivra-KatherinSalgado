@@ -12,6 +12,11 @@ body {
     overflow-x: hidden;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -21,7 +26,7 @@ body {
 .logo {
     height: 93px;
     width: 141px;
-    margin-right: 300px;
+    margin-right: auto;
 }
 
 .nav-links {
@@ -226,7 +231,7 @@ body {
     margin-top: 50px;
 }
 
-.productos h3{
+.productos h3 {
     margin-bottom: 50px;
 }
 
@@ -245,7 +250,7 @@ body {
     letter-spacing: 0.9px;
 }
 
-.testimonios h2{    
+.testimonios h2 {
     margin-bottom: 80px;
 }
 
@@ -587,15 +592,16 @@ input#t3:checked~.puntos label[for="t3"] {
     align-items: center;
     background-color: #384b3a;
     color: #fef9e7;
-    padding: 60px 40px;
+    padding: 60px 20px;
     font-family: 'Georgia', serif;
-    max-width: 881px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 
 
-.contenedor-testimonios {    
+.contenedor-testimonios {
     display: flex;
     align-items: center;
 }
@@ -667,9 +673,9 @@ input#t3:checked~.puntos label[for="t3"] {
 }
 
 .menu-footer {
+    margin-right: auto;
+    width: 100%;
     text-align: center;
-    width: 112px;
-    margin-right: 400px;
 }
 
 
@@ -769,158 +775,170 @@ input#t3:checked~.puntos label[for="t3"] {
 /* ✅ Para pantallas hasta 1024px (tablets y pequeñas laptops) */
 @media (max-width: 1024px) {
 
-  .hero {
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-  }
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
 
-  .hero-imagen img {
-    margin: 20px auto;
-    width: 90%;
-    height: auto;
-  }
+    .hero-imagen img {
+        margin: 20px auto;
+        width: 90%;
+        height: auto;
+    }
 
-  .hero-texto h1,
-  .hero-texto .resaltado {
-    text-align: center;
-    font-size: 3rem;
-    line-height: normal;
-  }
+    .hero-texto h1,
+    .hero-texto .resaltado {
+        text-align: center;
+        font-size: 3rem;
+        line-height: normal;
+    }
 
-  .hero-texto p {
-    width: 90%;
-    text-align: center;
-  }
+    .hero-texto p {
+        width: 90%;
+        text-align: center;
+    }
 
-  .boton {
-    margin: 20px auto;
-  }
+    .boton {
+        margin: 20px auto;
+    }
 
-  .contenido {
-    flex-direction: column;
-    align-items: center;
-  }
+    .contenido {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .menu-footer {
-    margin-right: 80px;
-  }
+    .menu-footer {
+        margin-right: 80px;
+    }
 
-  .formulario-footer {
-    width: 100%;
-  }
+    .formulario-footer {
+        width: 100%;
+    }
 
-  .carta {
-    width: 90%;
-    height: auto;
-  }
+    .carta {
+        width: 90%;
+        height: auto;
+    }
 }
 
 /* ✅ Para pantallas hasta 768px (smartphones y móviles) */
 @media (max-width: 768px) {
 
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-  }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
 
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-  }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
 
-  .nav-links li a {
-    width: 100%;
-    text-align: left;
-    padding-left: 10px;
-  }
+    .nav-links li a {
+        width: 100%;
+        text-align: left;
+        padding-left: 10px;
+    }
 
-  .logo {
-    margin: 0 auto 20px;
-  }
+    .logo {
+        margin: 0 auto 20px;
+    }
 
-  .beneficios ul {
-    flex-direction: column;
-  }
+    .beneficios ul {
+        flex-direction: column;
+    }
 
-  .beneficios li {
-    padding: 10px 0;
-  }
+    .beneficios li {
+        padding: 10px 0;
+    }
 
-  .porQue-contenedor {
-    flex-direction: column;
-    gap: 30px;
-  }
+    .porQue-contenedor {
+        flex-direction: column;
+        gap: 30px;
+    }
 
-  .guaterito .contenedor {
-    flex-direction: column;
-  }
+    .guaterito .contenedor {
+        flex-direction: column;
+    }
 
-  .texto {
-    flex-direction: column;
-    text-align: center;
-  }
+    .texto {
+        flex-direction: column;
+        text-align: center;
+    }
 
-  .texto p {
-    width: 90%;
-    margin: 0 auto 20px;
-  }
+    .texto p {
+        width: 90%;
+        margin: 0 auto 20px;
+    }
 
-  .texto img {
-    width: 90%;
-  }
+    .texto img {
+        width: 90%;
+    }
 
-  .cartas-info {
-    flex-direction: column;
-    align-items: center;
-  }
+    .cartas-info {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .contenedor-testimonios {
-    flex-direction: column;
-    text-align: center;
-  }
+    .contenedor-testimonios {
+        flex-direction: column;
+        text-align: center;
+    }
 
-  .testimonio {
-    flex-direction: column;
-    align-items: center;
-  }
+    .testimonio {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .testimonio img {
-    margin: 0 auto 20px;
-  }
+    .testimonio img {
+        margin: 0 auto 20px;
+    }
 
-  .testimonio p {
-    width: 90%;
-    height: auto;
-  }
+    .testimonio p {
+        width: 90%;
+        height: auto;
+    }
 
-  .lado-derecho {
-    max-width: 100%;
-    align-items: center;
-  }
+    .lado-derecho {
+        max-width: 100%;
+        align-items: center;
+    }
 
-  .lado-derecho img {
-    width: 90%;
-  }
+    .lado-derecho img {
+        width: 90%;
+    }
 
-  .footer-contacto .contenido-footer {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
+    .footer-contacto .contenido-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
 
-  .menu-footer {
+    .menu-footer {
+        margin: 0 auto;
+    }
+
+    .formulario-footer {
+        width: 100%;
+    }
+
+    .formulario-footer form input,
+    .formulario-footer textarea {
+        width: 100%;
+    }
+
+    button,
+    input,
+    textarea {
+        width: 100%;
+    }
+}
+
+.container {
+    max-width: 1200px;
     margin: 0 auto;
-  }
-
-  .formulario-footer {
-    width: 100%;
-  }
-
-  .formulario-footer form input,
-  .formulario-footer textarea {
-    width: 100%;
-  }
+    padding: 0 20px;
 }
