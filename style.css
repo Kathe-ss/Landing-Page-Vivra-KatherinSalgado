@@ -12,11 +12,6 @@ body {
     overflow-x: hidden;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .navbar {
     display: flex;
     align-items: center;
@@ -212,7 +207,10 @@ img {
 }
 
 .porQue p {
+    text-align: center;
+    margin: 0 auto;
     width: 219px;
+    max-width: 100%;
     color: #FEF4E6;
 
     text-align: center;
