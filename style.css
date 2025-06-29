@@ -9,7 +9,6 @@ body {
     background-color: #384b3a;
     justify-content: center;
     max-width: 100%;
-    overflow-x: hidden;
 }
 
 .navbar {
